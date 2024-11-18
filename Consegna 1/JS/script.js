@@ -1,22 +1,31 @@
 //Mail
 
+//inseriamo delle possibili mail, ergo delle variabili
+
+const mail = [ "simo@gmail.com", "simoz@gmail.com", "vanessa@gmail.com", "vanessasa@gmail.com" ]
+
 //chiedi all'utente la sua mail, controllando che sia nella lista di chi può accedere, stampando un messaggio appropriato sull'esito di controllo.
 
-let inserisciMail = parseInt(prompt('inserisci mail'))
+let convalida = false;
 
-//ora inseriamo delle possibili mail, ergo delle variabili
+while(!convalida){
+    let inserisciMail = prompt('inserisci mail')
+    let messaggio = 'mail invalida'
 
-const mail = ['simo@gmail.com', 'simoz@gmail.com', 'vanessa@gmail.com', 'vanessasa@gmail.com' ]
-
-//creiamo un metodo di verifica per la mail
-
-let verifica = false;
-
-while
-
-//a questo punto, il console log dovrà validare la mail che verrà inserita dall'utente se è compresa nell'elenco
-
-if( mail.includes(inserisciMail)){
-    console.log('Benvenuto')
-    alert('Benvenuto')
+    if(inserisciMail){
+        for(let i = 0; i < mail.length; i++) {
+       
+            if(inserisciMail.toLowerCase() == mail[i]){
+                messaggio = 'mail valida' 
+                convalida = true;
+            }    
+        }
+    }
+       
+    console.log(messaggio)
 }
+
+
+
+
+
