@@ -8,6 +8,12 @@ let inserisciMail = parseInt(prompt('inserisci mail'))
 
 const mail = ['simo@gmail.com', 'simoz@gmail.com', 'vanessa@gmail.com', 'vanessasa@gmail.com' ]
 
+//creiamo un metodo di verifica per la mail
+
+let verifica = false;
+
+while
+
 //a questo punto, il console log dovrà validare la mail che verrà inserita dall'utente se è compresa nell'elenco
 
 if( mail.includes(inserisciMail)){
